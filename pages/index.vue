@@ -8,11 +8,21 @@ watch(searchText, async (newText, oldText) => {
     charListing.value = { results: [] };
   } else if (newText !== oldText) {
     loadingActive.value = true;
-    const resp = await $fetch("api/search", {
-      query: { search: newText },
-    });
+    try {
+      const resp = await $fetch("api/search", {
+        query: { search: newText },
+      });
+      charListing.value = resp.data;
+    } catch (error) {
+      await $fetch("api/log/error", {
+        method: "POST",
+        params: {
+          name: "Error on Client Search",
+          error,
+        },
+      });
+    }
     loadingActive.value = false;
-    charListing.value = resp.data;
   }
 });
 </script>
