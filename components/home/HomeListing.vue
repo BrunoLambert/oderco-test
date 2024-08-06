@@ -9,7 +9,7 @@
                         <br />
                         Peso: {{ character.mass }}
                     </p>
-                    <p class="mt-2 text-decoration-underline text-primary cursor-pointer">
+                    <p class="mt-2 text-decoration-underline text-primary cursor-pointer" @click="() => { openCharacterPage(character.id) }">
                         Ver todos os detalhes
                     </p>
                 </v-card-text>
@@ -23,6 +23,11 @@
 export default {
   props: {
     characters: Object,
+  },
+  methods: {
+    openCharacterPage(id) {
+      navigateTo(`/character/${id}`)
+    },
   },
 };
 </script>
