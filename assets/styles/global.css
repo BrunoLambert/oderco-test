@@ -1,6 +1,17 @@
-body, .v-application {
+body,
+.v-application {
     margin: 0 !important;
     min-height: 100vh;
     background-color: black !important;
     color: white !important;
+}
+
+.page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 5% 0 5%;
+    gap: 10px;
 }

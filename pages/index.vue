@@ -28,7 +28,7 @@ watch(searchText, async (newText, oldText) => {
 </script>
 
 <template lang="">
-    <div class="home-page text-center">
+    <div class="page text-center">
         <h1 class="text-h4">
             Todos os dados de Star Wars que você sempre quis
         </h1>
@@ -44,14 +44,5 @@ watch(searchText, async (newText, oldText) => {
     </div>
 </template>
 
-<style lang="css">
-.home-page {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 5% 0 5%;
-  gap: 10px;
-}
+<style lang="">
 </style>
