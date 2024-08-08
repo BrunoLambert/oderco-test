@@ -18,21 +18,17 @@ try {
   });
   character.value = data;
 
-  let valueCount = 0;
   if (data.value.films.length > 0) {
     navigationItems.push({ title: "Filmes", key: "films" });
-    valueCount++;
   }
   if (data.value.species.length > 0) {
     navigationItems.push({ title: "Espécie", key: "species" });
-    valueCount++;
   }
   if (data.value.vehicles.length > 0) {
     navigationItems.push({
       title: "Veículos",
       key: "vehicles",
     });
-    valueCount++;
   }
   if (data.value.starships.length > 0) {
     navigationItems.push({
@@ -40,6 +36,10 @@ try {
       key: "starships",
     });
   }
+
+  useHead({
+    title: `Star Wars - ${data.value.name}`,
+  });
 } catch (error) {
   await useFetch("api/log/error", {
     method: "POST",

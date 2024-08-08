@@ -1,9 +1,9 @@
 export default defineAppConfig({
-    title: 'Hello Nuxt',
+    title: 'Star Wars - Todos os dados de Star Wars que você sempre quis',
     theme: {
         dark: true,
         colors: {
-            primary: 'red'
+            primary: '#DBA90D'
         }
     },
 })

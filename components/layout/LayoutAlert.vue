@@ -1,4 +1,8 @@
 <script setup>
+// Componente criado e importado direto no Layout para informar possíveis error, sucessos ou avisos.ddd
+// Para esse caso, só está sendo usado uma variavel para poder abrir e fechar o componente.
+// Porém daria para implementar mais coisas, como texto customizado pela chamada, bem como a cor.
+
 // States
 const alert = useState("alert", () => false);
 </script>
