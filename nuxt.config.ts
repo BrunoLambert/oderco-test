@@ -7,6 +7,12 @@ export default defineNuxtConfig({
       title: 'Star Wars - Todos os dados de Star Wars que você sempre quis',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
+      meta: [
+        { name: 'ogTitle', content: 'Star Wars - Todos os dados de Star Wars que você sempre quis' },
+        { name: 'description', content: 'Procure pelo seu personagem favorito!' },
+        { name: 'ogDescription', content: 'Procure pelo seu personagem favorito!' },
+        { name: 'ogImage', content: '/img/starwars_logo.png' }
+      ]
     }
   },
   compatibilityDate: '2024-04-03',
