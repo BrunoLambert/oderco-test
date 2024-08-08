@@ -16,7 +16,12 @@ const searchValue = defineModel("value");
       </template>
 
       <template v-slot:append-inner>
-        <v-icon color="icon-color" class="opacity-100">mdi-close</v-icon>
+        <v-icon
+          color="icon-color"
+          class="opacity-100"
+          @click="() => (searchValue = '')"
+          >mdi-close</v-icon
+        >
       </template>
 
       <template v-slot:loader>
