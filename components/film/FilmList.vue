@@ -3,7 +3,7 @@ const { films } = defineProps(["films"]);
 </script>
 
 <template lang="">
-<v-container fluid style="width: 60vw">
+<v-container fluid class="detail-content">
     <v-card color="primary-darken-1" minHeight="380px" min-width="380px" class="pa-10 character-card">
         <v-card color="background-darken-1" class="character-data-card">
             <v-card-text class="text-left">
@@ -47,7 +47,7 @@ p {
 
 p span {
   color: rgb(var(--v-theme-primary));
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 18px;
   text-transform: capitalize;
 }

@@ -3,7 +3,7 @@ const { character } = defineProps(["character"]);
 </script>
 
 <template>
-  <v-container fluid style="width: 60vw">
+  <v-container fluid class="detail-content">
     <v-card
       color="primary-darken-1"
       minHeight="380px"
@@ -34,11 +34,19 @@ const { character } = defineProps(["character"]);
 </template>
 
 <style lang="css">
+.detail-content {
+  overflow: visible !important;
+  width: 65vw !important;
+  display: flex;
+  justify-content: center;
+  margin-left: -120px;
+}
 .character-card {
   position: relative;
   border-radius: 24px !important;
   overflow: visible !important;
   width: 70%;
+  max-width: 450px;
 }
 
 .character-card:before {
@@ -70,7 +78,7 @@ p {
 
 p span {
   color: rgb(var(--v-theme-primary));
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 32px;
   text-transform: capitalize;
 }

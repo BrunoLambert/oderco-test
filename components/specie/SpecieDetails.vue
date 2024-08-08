@@ -3,7 +3,7 @@ const { specie } = defineProps(["specie"]);
 </script>
 
 <template lang="">
-    <v-container fluid style="width: 60vw">
+    <v-container fluid class="detail-content">
     <v-card
       color="primary-darken-1"
       minHeight="380px"
