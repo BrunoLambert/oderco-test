@@ -55,7 +55,7 @@ const { character } = defineProps(["character"]);
   width: 320px;
   height: 140px;
   top: calc(50% - 80px);
-  left: -25px;
+  left: -40px;
   z-index: 10;
   background: url("/img/starwars_logo.png") no-repeat top center;
   background-size: 320px;
@@ -65,7 +65,7 @@ const { character } = defineProps(["character"]);
 .character-data-card {
   border-radius: 16px !important;
   position: absolute;
-  left: 240px;
+  left: 200px;
   background-color: #151515 !important;
   padding: 10px !important;
 }

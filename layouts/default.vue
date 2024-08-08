@@ -1,5 +1,6 @@
 <template lang="">
     <div class="app-layout">
+        <LayoutAlert />
         <LayoutHeader />
         <slot />
     </div>

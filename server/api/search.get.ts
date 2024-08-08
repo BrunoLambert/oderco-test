@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     try {
         const query = getQuery(event)
 
-        const resp: CharacterSearchResponseType = await $fetch(`https://swapi.dev/api/people/?search=${query.search}`)
+        const resp: CharacterSearchResponseType = await $fetch(`https://swapi.dev/api/people/?search=${query.search}&page=${query.page}`)
 
         let results = resp.results.map(result => ({
             id: result.url.split('people/')[1].replace('/', ''),

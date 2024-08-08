@@ -4,7 +4,7 @@ const searchValue = defineModel("value");
 </script>
 
 <template>
-  <v-container class="mt-5 w-50">
+  <v-container class="mt-5 search-container">
     <v-text-field v-model="searchValue" name="search" id="search-field" loading>
       <template v-slot:label>
         <span class="text-body-2">
@@ -31,5 +31,9 @@ const searchValue = defineModel("value");
   </v-container>
 </template>
 
-<style lang="">
+<style lang="css" scoped>
+.search-container {
+  max-width: 95vw;
+  width: 600px !important;
+}
 </style>
